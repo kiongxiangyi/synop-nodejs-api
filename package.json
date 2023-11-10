@@ -1,0 +1,35 @@
+{
+  "name": "synop-nodejs-api",
+  "bin": {
+    "isg-aicom-api": "readFile.js"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node readFile.js",
+    "dev": "nodemon readFile.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "<h3 align=\"center\">API to read CSV file</h3>",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.2",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "kill-port": "^2.0.1",
+    "luxon": "^3.3.0",
+    "mssql": "^9.1.1",
+    "nexe": "^4.0.0-rc.2",
+    "node-cron": "^3.0.2",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "pkg": "^5.8.1",
+    "read-excel-file": "^5.6.1",
+    "xlsx": "^0.18.5"
+  }
+}
