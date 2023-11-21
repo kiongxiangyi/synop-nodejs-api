@@ -137,6 +137,9 @@ const fetchCSV = async (req, res) => {
         ('${++validatedID}',
         '${uniqueFileArray[i].FeatureID}', 
         '${uniqueFileArray[i].STARTTIME}', 
+        '${DateTime.fromMillis(parseInt(uniqueFileArray[i].STARTTIME)).toFormat(
+          "yyyy-MM-dd HH:mm:ss"
+        )}', 
         '${uniqueFileArray[i].DURATION}', 
         '${uniqueFileArray[i].COMPLETED}',
         '${uniqueFileArray[i].STABILITY}',
