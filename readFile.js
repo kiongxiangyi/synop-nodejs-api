@@ -46,6 +46,17 @@ const fetchCSV = async (req, res) => {
         console.log(error.message);
       });
 
+    // Function to filter out duplicates
+    const filterDuplicates = (database, file) => {
+      return file.filter((fileItem) => {
+        return !database.some(
+          (databaseItem) =>
+            fileItem.FeatureID === databaseItem.FeatureID &&
+            fileItem.STARTTIME === databaseItem.STARTTIME
+        );
+      });
+    };
+
     // Connect to the SQL Server database
     try {
       pool = await sql.connect(databaseOptions);
@@ -54,8 +65,7 @@ const fetchCSV = async (req, res) => {
       let request = new sql.Request();
       let synopResults = [];
       let databaseResults = [];
-      let duplicateExists = [];
-      let validcsvData = [];
+      let uniqueFileArray = [];
 
       try {
         //get data from DB
@@ -76,39 +86,28 @@ const fetchCSV = async (req, res) => {
           synopResults.push({
             FeatureID: `${csvData[i].PROGRAMNAME}_${csvData[i].SERIALNR}_${csvData[i].FEATURE}`,
             STARTTIME: csvData[i].STARTTIME,
+            DURATION: csvData[i].DURATION,
+            COMPLETED: csvData[i].COMPLETED,
+            STABILITY: csvData[i].STABILITY,
+            COMMENT: csvData[i].COMMENT,
           });
         }
 
-        //compare both array and filter the duplicate
-        //loop the data in csv
-        for (let i = 0; i < csvData.length; i++) {
-          //loop the data in DB
-          for (let j = 0; j < databaseResults.length; j++) {
-            let findDuplicate = synopResults.filter(
-              (synopResult) =>
-                synopResult.FeatureID === databaseResults[j].FeatureID &&
-                synopResult.STARTTIME === databaseResults[j].STARTTIME
-            );
-            //if duplicate found, push in Arr duplicateExists
-            if (findDuplicate != "") {
-              duplicateExists.push(findDuplicate);
-            }
-          }
-          //if no duplicate where Arr duplicateExists is empty, push csv data to Arr validcsvData (use for SQL Insert later)
-          if (duplicateExists.length === 0) {
-            validcsvData.push(csvData[i]);
-          }
-        }
+        // Filter duplicates
+        uniqueFileArray = filterDuplicates(databaseResults, synopResults);
+
+        console.log("Unique File Array:", uniqueFileArray);
       } catch (error) {
         console.log(error);
       }
 
-      if (validcsvData.length > 0) {
+      if (uniqueFileArray.length > 0) {
+        // if (findNotDuplicate.length > 0) {
         //if there is csv data
 
         let count;
         let validatedID;
-        let numberOfData = validcsvData.length;
+        let numberOfData = uniqueFileArray.length;
 
         try {
           //check if there is any data in DB
@@ -131,32 +130,30 @@ const fetchCSV = async (req, res) => {
             validatedID = 0;
           }
 
-          for (let i = 0; i < validcsvData.length; i++) {
+          for (let i = 0; i < uniqueFileArray.length; i++) {
             try {
               await request.query(
                 `INSERT INTO tblAicomEreignisse VALUES 
         ('${++validatedID}',
-        '${validcsvData[i].PROGRAMNAME}_${validcsvData[i].SERIALNR}_${
-                  validcsvData[i].FEATURE
-                }', 
-        '${validcsvData[i].STARTTIME}', 
-        '${validcsvData[i].DURATION}', 
-        '${validcsvData[i].COMPLETED}',
-        '${validcsvData[i].STABILITY}',
-        '${validcsvData[i].COMMENT}')`
+        '${uniqueFileArray[i].FeatureID}', 
+        '${uniqueFileArray[i].STARTTIME}', 
+        '${uniqueFileArray[i].DURATION}', 
+        '${uniqueFileArray[i].COMPLETED}',
+        '${uniqueFileArray[i].STABILITY}',
+        '${uniqueFileArray[i].COMMENT}')`
               );
 
               fs.appendFileSync(
                 "file.log",
-                `${validcsvData[i].PROGRAMNAME}.${validcsvData[i].SERIALNR}.${validcsvData[i].FEATURE};${validcsvData[i].STARTTIME};${validcsvData[i].DURATION};${validcsvData[i].COMPLETED};${validcsvData[i].STABILITY};${validcsvData[i].COMMENT} wurde in DB geschrieben.\n`
+                `${uniqueFileArray[i].FeatureID};${uniqueFileArray[i].STARTTIME};${uniqueFileArray[i].DURATION};${uniqueFileArray[i].COMPLETED};${uniqueFileArray[i].STABILITY};${uniqueFileArray[i].COMMENT} wurde in DB geschrieben.\n`
               );
               console.log(
-                `${validcsvData[i].PROGRAMNAME}.${validcsvData[i].SERIALNR}.${validcsvData[i].FEATURE};${validcsvData[i].STARTTIME};${validcsvData[i].DURATION};${validcsvData[i].COMPLETED};${validcsvData[i].STABILITY};${validcsvData[i].COMMENT} wurde in DB geschrieben.`
+                `${uniqueFileArray[i].FeatureID};${uniqueFileArray[i].STARTTIME};${uniqueFileArray[i].DURATION};${uniqueFileArray[i].COMPLETED};${uniqueFileArray[i].STABILITY};${uniqueFileArray[i].COMMENT} wurde in DB geschrieben.`
               );
 
               numberOfData--; //reduce count after every data record being read
-              //when it is zero, log file
-              checkNumberOfData(numberOfData);
+              //when it is zero, run move file function
+              //checkNumberOfData(numberOfData);
             } catch (error) {
               console.log(error);
             }
