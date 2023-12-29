@@ -34,6 +34,8 @@ const checkNumberOfData = (numberOfData) => {
 const csvData = [];
 const fetchCSV = async (req, res) => {
   let pool;
+  let processCompleted; // Flag to indicate if the entire process has completed
+
   try {
     //read csv
     fs.createReadStream(csvPath[1])
@@ -161,6 +163,7 @@ const fetchCSV = async (req, res) => {
               console.log(error);
             }
           }
+          processCompleted = 1; // Set the flag to true after completing the entire process
         } catch (error) {
           console.log(error);
         }
@@ -172,6 +175,7 @@ const fetchCSV = async (req, res) => {
           "file.log",
           "The CSV file is either empty or the data already exists in the database.\n"
         );
+        processCompleted = 2; // Set the flag to true after completing the entire process
       }
     } catch (err) {
       console.log("Error connecting to the SQL Server database:", err);
@@ -182,6 +186,14 @@ const fetchCSV = async (req, res) => {
     }
   } catch (error) {
     console.log(error);
+  } finally {
+    if (processCompleted === 1) {
+      console.log("Java program executed successfully");
+    } else if (processCompleted === 2) {
+      console.log(
+        "The CSV file is either empty or the data already exists in the database."
+      );
+    }
   }
 };
 

@@ -95,3 +95,216 @@ AICoM_F100_999_5_1_1;1694095899286;35000;1;0.028729687;Signal:ZActTrq ProcessDur
 AICoM_F100_999_5_1_1;1694098871182;40000;1;0.200462854;Signal:ZActTrq ProcessDuration:13% wurde in DB geschrieben.
 AICoM_F100_999_5_1_1;1694101843078;35000;1;0.9999999; wurde in DB geschrieben.
 AICoM_F100_999_5_1_1;1694104814974;35000;1;0.9999999; wurde in DB geschrieben.
+
+--------------------2023-12-27T10:06:32.211+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+AICoM_F100_1694095674285_5_1_1;1694105814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694106814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694107814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694108814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694109814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694110814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694111814974;40000;1;0.9999999; wurde in DB geschrieben.
+
+--------------------2023-12-29T12:58:27.344+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+AICoM_F100_1694095674285_5_1_1;1694092927390;40000;1;-1.0; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694095899286;35000;1;0.018729687;Signal:ZActTrq ProcessDuration:-14% wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694098871182;40000;1;0.100462854;Signal:ZActTrq ProcessDuration:13% wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694101843078;35000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694104814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694105814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694106814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694107814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694108814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694109814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694110814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694111814974;40000;1;0.9999999; wurde in DB geschrieben.
+
+--------------------2023-12-29T13:13:52.058+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T13:14:20.930+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+AICoM_F100_1694095674285_5_1_1;1694092927390;40000;1;-1.0; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694095899286;35000;1;0.018729687;Signal:ZActTrq ProcessDuration:-14% wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694098871182;40000;1;0.100462854;Signal:ZActTrq ProcessDuration:13% wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694101843078;35000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694104814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694105814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694106814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694107814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694108814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694109814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694110814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694111814974;40000;1;0.9999999; wurde in DB geschrieben.
+
+--------------------2023-12-29T13:14:38.993+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+AICoM_F100_1694095674285_5_1_1;1694092927390;40000;1;-1.0; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694095899286;35000;1;0.018729687;Signal:ZActTrq ProcessDuration:-14% wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694098871182;40000;1;0.100462854;Signal:ZActTrq ProcessDuration:13% wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694101843078;35000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694104814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694105814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694106814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694107814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694108814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694109814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694110814974;40000;1;0.9999999; wurde in DB geschrieben.
+AICoM_F100_1694095674285_5_1_1;1694111814974;40000;1;0.9999999; wurde in DB geschrieben.
+
+--------------------2023-12-29T13:15:28.325+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T13:17:39.945+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T13:31:22.186+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T13:35:05.841+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T13:46:33.894+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T13:49:02.846+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:19.147+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:23.005+01:00--------------------
+Die CSV-Datei wird gesucht...
+
+--------------------2023-12-29T14:06:23.022+01:00--------------------
+Die CSV-Datei ist vorhanden.
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:24.027+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:24.880+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:25.780+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:32.988+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:34.951+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:35.876+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:37.744+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:06:38.723+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:07:14.932+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:07:15.790+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:07:19.211+01:00--------------------
+Die CSV-Datei wird gesucht...
+
+--------------------2023-12-29T14:07:19.223+01:00--------------------
+Die CSV-Datei ist vorhanden.
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:07:59.157+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:11:44.072+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
+
+--------------------2023-12-29T14:29:52.384+01:00--------------------
+Die CSV-Datei wird gesucht...
+Die CSV-Datei ist vorhanden.
+Connected to the SQL Server database
+The CSV file is either empty or the data already exists in the database.
