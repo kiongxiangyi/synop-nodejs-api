@@ -227,9 +227,8 @@ if (fs.existsSync(csvPath[1])) {
   process.exit();
 }
 
-/* 
-cron.schedule("*5 * * * * *", async () => {
-console.log("running a task every 5 second");
-await fetchCSV();
-}); 
+/* cron.schedule("/*5 * * * * *", async () => {
+  console.log("Running the task every 5 seconds");
+  await fetchCSV();
+});
 */
